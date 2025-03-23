@@ -1,0 +1,746 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ====== Root Variables ====== */
+:root {
+    --main-color: #07143f;
+    --secondary-color: #0a2a3a;
+    --hover-color: #2d8ed8;
+    --text-color: #fff;
+    --bg-color: #081b29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #051a26;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.header .navbar a:hover,
+.header .navbar a.active {
+    color: #00aaff;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Home Section */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #023752;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    height: 100vh;
+}
+
+/* Home Section */
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--main-color);
+}
+
+/* Home Section */
+.home-img img {
+    width: 550px;
+    /* Adjust as needed */
+    height: 550px;
+    /* Adjust as needed */
+    border-radius: 50%;
+    /* Makes the image circular */
+    border: 5px solid rgb(200, 200, 224);
+    /* Blue border */
+    display: block;
+    margin: 0 auto;
+}
+
+.home-img:hover::before {
+    background: rgba(0, 0, 255, 0.5);
+}
+
+.home-img:hover img {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 450;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    font-size: 25px;
+    color: var(--hover-color);
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--text-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0088cc;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+    gap: 50px;
+}
+
+.about-img img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* About Section */
+.about-img img {
+    width: 550px;
+    /* Adjust as needed */
+    height: 550px;
+    /* Adjust as needed */
+    border-radius: 0;
+    /* Square shape */
+    border: 5px solid var(--text-color);
+    /* Optional border color */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Technical Skills - Left Side */
+.technical-skills {
+    width: 50%;
+}
+
+/* Right Side - Professional Skills */
+.professional-skills {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Aligns the content to the right */
+    text-align: right;
+}
+
+
+/* Align Technical Skill Bars */
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* Ensures it takes full width of the container */
+    max-width: 500px;
+    /* Limits the max width */
+}
+
+/* Adjust icon width */
+.bar i {
+    font-size: 24px;
+    width: 50px;
+    /* Adjusted width for better spacing */
+    text-align: center;
+}
+
+/* Adjust progress bar width */
+.progress-line {
+    flex-grow: 1;
+    height: 12px;
+    /* Slightly increased height for better visibility */
+    background: #444;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 10px;
+    max-width: 70%;
+    /* Adjust width dynamically */
+}
+
+/* Adjust filled progress */
+.progress-line span {
+    height: 100%;
+    background: #007bff;
+    position: absolute;
+    border-radius: 5px;
+    width: 80%;
+    /* Example width, adjust dynamically using inline styles */
+}
+
+/* Center percentage */
+.percent {
+    font-weight: bold;
+    width: 50px;
+    /* Ensures proper alignment */
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .progress-line {
+        width: 100%;
+        /* Full width on smaller screens */
+        max-width: none;
+    }
+
+    .percent {
+        align-self: flex-end;
+    }
+}
+
+
+/* Professional Skills - Right Side */
+.professional-skills {
+    width: 45%;
+    text-align: center;
+}
+
+/* Professional Skills - Horizontal Layout */
+.professional-skills {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.radial-bars {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.radial-bar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+/* Circular Progress Bar */
+.progress-bar {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+.progress {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/* Percentage Inside the Circle */
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Skill Text Below */
+.text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+/* Align Radial Bars */
+.radial-bars {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Circular Progress Bar */
+.radial-bar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.progress-bar {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+
+
+/* Services Section */
+.services-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.services-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.services-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services-box:hover {
+    background: #007bff;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+
+
+/* Services */
+/* Services Section */
+.services-section {
+    text-align: center;
+    /* Centers the heading */
+    padding: 50px 5%;
+    background-color: var(--main-color);
+}
+
+/* Centered Heading */
+.services-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f9f6f6;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* Centers the boxes horizontally */
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Services Box */
+.services-box {
+    flex: 1;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Hover Effect */
+.services-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.services-box i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.services-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.services-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-box {
+        max-width: 90%;
+    }
+}
+
+
+/* Portfolio */
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 50px 5%;
+    background-color: var(--main-color);
+}
+
+/* Heading Styling */
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #007bff;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Portfolio Box */
+.portfolio-box {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio Image */
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Overlay Effect */
+.portfolio-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+/* Icon */
+.portfolio-layer i {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Contact */
+/* Center the Contact Form */
+/* Center the Contact Me heading */
+.contact .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ebebeb;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Input Box for Two Inputs */
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* Adds spacing */
+    margin-bottom: 15px;
+}
+
+/* Inputs & Textarea Styling */
+.input-box input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #06263d;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Make inputs inside .input-box 48% */
+.input-box input {
+    width: 48%;
+}
+
+/* Full Width Textarea */
+.contact textarea {
+    width: 100%;
+    resize: none;
+    height: 120px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.contact button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box input {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background: #051a26;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #051a26;
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+}
